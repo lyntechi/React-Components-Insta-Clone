@@ -8,6 +8,7 @@ import "./Posts.css";
 
 // pass props in this file to
 export const Post = props => {
+
   // set up state for the likes
 
   return (
