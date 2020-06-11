@@ -7,16 +7,16 @@ import DummyData from "../../dummy-data";
 
 const CommentSection = props => {
   // Add state for the comments
-const[comments, setComments]= useState(DummyData);
-  return (
-    <div>
-    
-      {comments.map(function(item){
-        return [<Comment comment={item} />]
-      })}
-      <CommentInput />
+  
+const[comments, setComments]= useState(props.comments);
+  return(
+   <div>
+   
+ <CommentInput />
+ 
     </div>
-  );
-};
+   
+   )//this closes commentsection return
+};//this closes commentsection arrow function
 
 export default CommentSection;
